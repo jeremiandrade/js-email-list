@@ -24,16 +24,14 @@ fetch(emailJavaScript)
 for (let i = 0;  i < 10; i++) {
   fetch(emailJavaScript)
         .then(response => response.json())
-        .then(data=> {
-            
+        .then(data=> {   
          const li = document.createElement('li');
-          li.innerHTML += data.response  
-            olList.append(li)
-            console.log(olList.innerHTML);
-            
+            li.innerHTML += data.response  
+             olList.append(li)
+             console.log(olList.innerHTML);
+                
         })
     
- 
 }
 
 
